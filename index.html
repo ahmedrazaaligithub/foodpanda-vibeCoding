@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>foodpanda | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-900">
+
+<!-- NAVBAR -->
+<div id="navbar"></div>
+
+<!-- HERO -->
+<section class="relative h-[80vh]">
+  <img
+    src="https://images.unsplash.com/photo-1526366003456-2c4f90b55d5e"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <div class="absolute inset-0 bg-black/30"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 h-full flex items-center">
+    <h1 class="text-white text-5xl md:text-6xl font-bold leading-tight">
+      food <br /> and groceries <br /> in a tap
+    </h1>
+  </div>
+</section>
+
+<!-- INTRO TEXT -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <p class="text-2xl font-semibold max-w-3xl leading-relaxed">
+    We’re here to help you live life the panda way.
+    Spend more time doing what you love –
+    we’ll take care of tasty meals, fresh groceries
+    and new flavours.
+  </p>
+</section>
+
+<!-- NEXT GENERATION -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+  <img
+    src="https://images.unsplash.com/photo-1580910051074-3eb694886505"
+    class="rounded-xl"
+  />
+
+  <div>
+    <h2 class="text-3xl font-bold mb-4">
+      Meet the next generation of delivery!
+    </h2>
+    <p class="text-gray-600 mb-6">
+      What makes quick commerce quick? We stand for swift
+      personalised delivery solutions for our customers,
+      partners and employees.
+    </p>
+    <button class="bg-pink-600 text-white px-6 py-3 rounded-full text-sm font-medium">
+      About
+    </button>
+  </div>
+</section>
+
+<!-- TASTE THE CONVENIENCE -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+  <div>
+    <h2 class="text-3xl font-bold mb-4">Taste the convenience.</h2>
+    <p class="text-gray-600 mb-6">
+      Try us out! Delicious food and speedy groceries
+      are at your fingertips.
+    </p>
+
+    <div class="flex gap-4">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="h-12" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-12" />
+    </div>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1606851091851-e8c8c0b6a4e7"
+    class="rounded-xl"
+  />
+</section>
+
+<!-- CAREERS -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+  <img
+    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+    class="rounded-xl"
+  />
+
+  <div>
+    <h2 class="text-3xl font-bold mb-4">Find the job you’d love</h2>
+    <p class="text-gray-600 mb-6">
+      Hungry to make a difference? There’s a seat at our table.
+    </p>
+    <button class="bg-pink-600 text-white px-6 py-3 rounded-full text-sm font-medium">
+      Join us!
+    </button>
+  </div>
+</section>
+
+<!-- HAVE YOU HEARD -->
+<section class="bg-gray-50 py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-4">
+      Have you heard?
+    </h2>
+    <p class="text-center text-gray-600 mb-10">
+      Stay up to date with foodpanda press.
+    </p>
+
+    <div class="flex gap-6 overflow-x-auto">
+      <div class="min-w-[260px] h-[360px] bg-black rounded-xl text-white p-4">
+        <p class="text-sm">Business</p>
+        <h3 class="mt-2 font-semibold">foodpanda delivered 2024</h3>
+      </div>
+
+      <div class="min-w-[260px] h-[360px] bg-pink-600 rounded-xl text-white p-4">
+        <p class="text-sm">Press Release</p>
+        <h3 class="mt-2 font-semibold">Rider safety initiatives</h3>
+      </div>
+
+      <div class="min-w-[260px] h-[360px] bg-gray-800 rounded-xl text-white p-4">
+        <p class="text-sm">Business</p>
+        <h3 class="mt-2 font-semibold">Expanding across Asia</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEED YOUR TEAM -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+  <div>
+    <h2 class="text-3xl font-bold mb-4">Feed your team.</h2>
+    <p class="text-gray-600 mb-6">
+      Treat your team to their favourite meals.
+    </p>
+    <button class="bg-pink-600 text-white px-6 py-3 rounded-full text-sm font-medium">
+      Explore
+    </button>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1556912990-dac05d77c9f0"
+    class="rounded-xl"
+  />
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- COMPONENT LOAD -->
+<script>
+  fetch("components/navbar.html")
+    .then(res => res.text())
+    .then(data => navbar.innerHTML = data);
+
+  fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => footer.innerHTML = data);
+</script>
+
+</body>
+</html>

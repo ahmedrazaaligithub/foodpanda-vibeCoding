@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | foodpanda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-900">
+
+<!-- NAVBAR -->
+<div id="navbar"></div>
+
+<!-- HERO -->
+<section class="bg-pink-600 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-5xl font-bold mb-6">
+        Hungry to make a difference?
+      </h1>
+      <p class="text-lg mb-8">
+        Join foodpanda and help shape the future of food and quick commerce.
+      </p>
+      <button class="bg-white text-pink-600 font-semibold px-8 py-4 rounded-full">
+        View open roles
+      </button>
+    </div>
+
+    <img
+      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+      alt="Careers hero"
+      class="rounded-2xl shadow-lg"
+    />
+  </div>
+</section>
+
+<!-- LIFE AT FOODPANDA -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <h2 class="text-3xl font-bold mb-16 text-center">
+    Life at foodpanda
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-10 text-center">
+    <div class="bg-gray-50 p-8 rounded-2xl">
+      <h4 class="font-semibold text-lg mb-3">Impact</h4>
+      <p class="text-gray-600">
+        Work on products that serve millions of customers every day.
+      </p>
+    </div>
+
+    <div class="bg-gray-50 p-8 rounded-2xl">
+      <h4 class="font-semibold text-lg mb-3">Growth</h4>
+      <p class="text-gray-600">
+        Learn, grow, and develop your career globally.
+      </p>
+    </div>
+
+    <div class="bg-gray-50 p-8 rounded-2xl">
+      <h4 class="font-semibold text-lg mb-3">Culture</h4>
+      <p class="text-gray-600">
+        Be part of a diverse, inclusive, and collaborative team.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAMS -->
+<section class="bg-gray-100 py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16">
+      Explore our teams
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Engineering</div>
+      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Product</div>
+      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Marketing</div>
+      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Operations</div>
+      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Data</div>
+      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Design</div>
+      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Finance</div>
+      <div class="bg-white p-6 rounded-xl text-center shadow-sm">People</div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <img
+      src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+      class="rounded-2xl shadow-lg"
+      alt="Team culture"
+    />
+
+    <div>
+      <h2 class="text-3xl font-bold mb-6">
+        A culture that cares
+      </h2>
+      <p class="text-gray-600 mb-4">
+        At foodpanda, we empower people to move fast, think big, and grow together.
+      </p>
+      <p class="text-gray-600">
+        We celebrate diversity, encourage ownership, and value collaboration.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-pink-600 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-6">
+      Find the job you’d love
+    </h2>
+    <button class="bg-white text-pink-600 font-semibold px-10 py-4 rounded-full">
+      Explore opportunities
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- COMPONENT LOAD -->
+<script>
+  fetch("components/navbar.html")
+    .then(res => res.text())
+    .then(data => navbar.innerHTML = data);
+
+  fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => footer.innerHTML = data);
+</script>
+
+</body>
+</html>

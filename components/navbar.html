@@ -1,0 +1,70 @@
+<header class="border-b bg-white sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- LOGO -->
+      <a href="index.html" class="text-pink-600 text-2xl font-bold">
+        foodpanda
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-pink-600">Home</a>
+        <a href="about.html" class="hover:text-pink-600">About</a>
+        <a href="newsroom.html" class="hover:text-pink-600">Newsroom</a>
+        <a href="partners.html" class="hover:text-pink-600">Partners</a>
+        <a href="panda-ads/index.html" class="hover:text-pink-600">Panda Ads</a>
+        <a href="careers.html" class="hover:text-pink-600">Careers</a>
+        <a href="contact.html" class="hover:text-pink-600">Contact</a>
+      </nav>
+
+      <!-- RIGHT ACTIONS -->
+      <div class="flex items-center gap-4">
+        <a href="choose-location.html" class="hidden md:block text-sm font-medium hover:text-pink-600">
+          Choose location
+        </a>
+
+        <!-- SEARCH ICON -->
+        <a href="search.html" class="text-gray-600 hover:text-pink-600">
+          🔍
+        </a>
+
+        <!-- AUTH -->
+        <button class="hidden md:block text-sm font-medium">
+          Log in
+        </button>
+        <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm">
+          Sign up
+        </button>
+
+        <!-- MOBILE MENU -->
+        <button id="menuBtn" class="lg:hidden text-xl">
+          ☰
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden lg:hidden border-t">
+    <nav class="flex flex-col px-4 py-4 gap-4 text-sm font-medium">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="newsroom.html">Newsroom</a>
+      <a href="partners.html">Partners</a>
+      <a href="panda-ads/index.html">Panda Ads</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+      <a href="choose-location.html">Choose location</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>

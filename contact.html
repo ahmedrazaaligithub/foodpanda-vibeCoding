@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | foodpanda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-900">
+
+<!-- NAVBAR -->
+<div id="navbar"></div>
+
+<!-- HERO -->
+<section class="bg-pink-600 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+    <h1 class="text-5xl font-bold mb-6">
+      How can we help you?
+    </h1>
+    <p class="text-lg">
+      Choose the option that best describes you.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT OPTIONS -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <div class="bg-gray-50 p-8 rounded-2xl text-center">
+      <h3 class="font-semibold text-lg mb-3">Customers</h3>
+      <p class="text-gray-600 mb-4">
+        Need help with orders, refunds, or payments?
+      </p>
+      <span class="text-pink-600 font-semibold">Get support</span>
+    </div>
+
+    <div class="bg-gray-50 p-8 rounded-2xl text-center">
+      <h3 class="font-semibold text-lg mb-3">Partners</h3>
+      <p class="text-gray-600 mb-4">
+        Questions about partnering with foodpanda?
+      </p>
+      <span class="text-pink-600 font-semibold">Contact us</span>
+    </div>
+
+    <div class="bg-gray-50 p-8 rounded-2xl text-center">
+      <h3 class="font-semibold text-lg mb-3">Riders</h3>
+      <p class="text-gray-600 mb-4">
+        Rider-related support and information.
+      </p>
+      <span class="text-pink-600 font-semibold">Learn more</span>
+    </div>
+
+    <div class="bg-gray-50 p-8 rounded-2xl text-center">
+      <h3 class="font-semibold text-lg mb-3">Media</h3>
+      <p class="text-gray-600 mb-4">
+        Press inquiries and media resources.
+      </p>
+      <span class="text-pink-600 font-semibold">Press contact</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- HELP SECTION -->
+<section class="bg-gray-100 py-24">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">
+      Looking for quick answers?
+    </h2>
+    <p class="text-gray-600 mb-10">
+      Visit our Help Center for FAQs and self-service options.
+    </p>
+    <button class="bg-pink-600 text-white px-10 py-4 rounded-full font-semibold">
+      Go to Help Center
+    </button>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="max-w-7xl mx-auto px-6 py-24 text-center">
+  <h2 class="text-3xl font-bold mb-6">
+    Still need help?
+  </h2>
+  <p class="text-gray-600 mb-10">
+    Reach out and we’ll get back to you as soon as possible.
+  </p>
+  <button class="bg-pink-600 text-white px-10 py-4 rounded-full font-semibold">
+    Contact foodpanda
+  </button>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- COMPONENT LOAD -->
+<script>
+  fetch("components/navbar.html")
+    .then(res => res.text())
+    .then(data => navbar.innerHTML = data);
+
+  fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => footer.innerHTML = data);
+</script>
+
+</body>
+</html>

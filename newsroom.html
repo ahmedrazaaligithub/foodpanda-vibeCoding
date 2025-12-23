@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsroom | foodpanda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-900">
+
+<!-- NAVBAR -->
+<div id="navbar"></div>
+
+<!-- HERO -->
+<section class="bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <h1 class="text-5xl font-bold mb-4">Newsroom</h1>
+    <p class="text-lg text-gray-600 max-w-3xl">
+      Stay up to date with the latest news, press releases,
+      and announcements from foodpanda.
+    </p>
+  </div>
+</section>
+
+<!-- FEATURED NEWS -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold mb-10">Featured</h2>
+
+  <div class="flex gap-6 overflow-x-auto">
+    <!-- CARD -->
+    <div class="min-w-[300px] h-[420px] rounded-xl overflow-hidden bg-black text-white relative">
+      <img
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+        class="absolute inset-0 w-full h-full object-cover opacity-80"
+      />
+      <div class="relative p-6 flex flex-col justify-end h-full">
+        <span class="text-xs uppercase mb-2">Business</span>
+        <h3 class="text-lg font-semibold">
+          foodpanda delivered growth across Asia
+        </h3>
+      </div>
+    </div>
+
+    <div class="min-w-[300px] h-[420px] rounded-xl overflow-hidden bg-pink-600 text-white relative">
+      <div class="p-6 flex flex-col justify-end h-full">
+        <span class="text-xs uppercase mb-2">Press Release</span>
+        <h3 class="text-lg font-semibold">
+          Enhancing rider safety initiatives
+        </h3>
+      </div>
+    </div>
+
+    <div class="min-w-[300px] h-[420px] rounded-xl overflow-hidden bg-gray-800 text-white relative">
+      <div class="p-6 flex flex-col justify-end h-full">
+        <span class="text-xs uppercase mb-2">Company</span>
+        <h3 class="text-lg font-semibold">
+          Expanding logistics capabilities
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALL NEWS -->
+<section class="bg-gray-50 py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10">Latest updates</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- NEWS CARD -->
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <span class="text-xs uppercase text-gray-500">Business</span>
+          <h3 class="font-semibold mt-2 mb-2">
+            foodpanda strengthens partnerships
+          </h3>
+          <p class="text-sm text-gray-600">
+            Supporting merchants through innovative delivery solutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1556761175-129418cb2dfe"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <span class="text-xs uppercase text-gray-500">Press Release</span>
+          <h3 class="font-semibold mt-2 mb-2">
+            New sustainability initiatives
+          </h3>
+          <p class="text-sm text-gray-600">
+            Reducing environmental impact across operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <span class="text-xs uppercase text-gray-500">Company</span>
+          <h3 class="font-semibold mt-2 mb-2">
+            Empowering teams globally
+          </h3>
+          <p class="text-sm text-gray-600">
+            Building a culture of growth and collaboration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- COMPONENT LOAD -->
+<script>
+  fetch("components/navbar.html")
+    .then(res => res.text())
+    .then(data => navbar.innerHTML = data);
+
+  fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => footer.innerHTML = data);
+</script>
+
+</body>
+</html>

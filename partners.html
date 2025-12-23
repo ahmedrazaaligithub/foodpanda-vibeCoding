@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Partner | foodpanda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-900">
+
+<!-- NAVBAR -->
+<div id="navbar"></div>
+
+<!-- HERO -->
+<section class="bg-pink-600 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-5xl font-bold mb-6">
+        Grow your business with foodpanda
+      </h1>
+      <p class="text-lg mb-8">
+        Reach new customers, boost your sales, and grow your brand with foodpanda.
+      </p>
+      <button class="bg-white text-pink-600 font-semibold px-8 py-4 rounded-full">
+        Become a partner
+      </button>
+    </div>
+
+    <img
+      src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+      class="rounded-2xl shadow-lg"
+      alt="Partner business"
+    />
+  </div>
+</section>
+
+<!-- PARTNER TYPES -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <h2 class="text-3xl font-bold text-center mb-16">
+    Who can partner with us?
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-12">
+    <!-- RESTAURANTS -->
+    <div class="bg-gray-50 p-10 rounded-2xl">
+      <h3 class="text-2xl font-semibold mb-4">Restaurants</h3>
+      <p class="text-gray-600 mb-6">
+        From local favorites to global brands, reach more customers through food delivery.
+      </p>
+      <ul class="space-y-3 text-gray-700">
+        <li>✔ Increased visibility</li>
+        <li>✔ Delivery & pickup options</li>
+        <li>✔ Marketing support</li>
+      </ul>
+    </div>
+
+    <!-- SHOPS -->
+    <div class="bg-gray-50 p-10 rounded-2xl">
+      <h3 class="text-2xl font-semibold mb-4">Shops & Groceries</h3>
+      <p class="text-gray-600 mb-6">
+        Sell groceries, essentials, and more with fast on-demand delivery.
+      </p>
+      <ul class="space-y-3 text-gray-700">
+        <li>✔ Wider customer reach</li>
+        <li>✔ Quick delivery network</li>
+        <li>✔ Dedicated partner tools</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="bg-gray-100 py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16">
+      Why partner with foodpanda?
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+      <div class="bg-white p-8 rounded-2xl shadow-sm">
+        <h4 class="font-semibold text-lg mb-3">More Customers</h4>
+        <p class="text-gray-600">
+          Access millions of users across multiple cities.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm">
+        <h4 class="font-semibold text-lg mb-3">Powerful Tools</h4>
+        <p class="text-gray-600">
+          Manage orders, menus, and performance easily.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm">
+        <h4 class="font-semibold text-lg mb-3">Reliable Delivery</h4>
+        <p class="text-gray-600">
+          Let our rider network handle deliveries for you.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <h2 class="text-3xl font-bold text-center mb-16">
+    How it works
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-12 text-center">
+    <div>
+      <span class="text-pink-600 text-4xl font-bold">1</span>
+      <h4 class="font-semibold mt-4 mb-2">Sign up</h4>
+      <p class="text-gray-600">
+        Register your business in just a few steps.
+      </p>
+    </div>
+
+    <div>
+      <span class="text-pink-600 text-4xl font-bold">2</span>
+      <h4 class="font-semibold mt-4 mb-2">Go live</h4>
+      <p class="text-gray-600">
+        Upload your menu or products and start selling.
+      </p>
+    </div>
+
+    <div>
+      <span class="text-pink-600 text-4xl font-bold">3</span>
+      <h4 class="font-semibold mt-4 mb-2">Grow</h4>
+      <p class="text-gray-600">
+        Increase orders and expand your reach.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-pink-600 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-6">
+      Ready to grow your business?
+    </h2>
+    <button class="bg-white text-pink-600 font-semibold px-10 py-4 rounded-full">
+      Join foodpanda today
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- COMPONENT LOAD -->
+<script>
+  fetch("components/navbar.html")
+    .then(res => res.text())
+    .then(data => navbar.innerHTML = data);
+
+  fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => footer.innerHTML = data);
+</script>
+
+</body>
+</html>
