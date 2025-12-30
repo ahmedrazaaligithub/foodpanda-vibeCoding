@@ -10,152 +10,435 @@
 
 <!-- NAVBAR -->
 <header class="border-b">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="../index.html" class="flex items-center gap-2">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/7/75/Foodpanda_logo.svg"
-        class="h-7"
-        alt="foodpanda"
-      />
-      <span class="font-semibold text-sm">panda ads</span>
-    </a>
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/75/Foodpanda_logo.svg"
+                    class="h-7"
+                    alt="foodpanda"
+                />
+                <span class="font-semibold text-sm">panda ads</span>
+            </a>
 
-    <nav class="hidden md:flex gap-8 text-sm font-medium">
-      <a href="index.html" class="text-pink-600">Home</a>
-      <a href="solutions.html" class="hover:text-pink-600">Solutions</a>
-      <a href="resources.html" class="hover:text-pink-600">Resources</a>
-      <a href="tools.html" class="hover:text-pink-600">Tools</a>
-      <a href="contact.html" class="hover:text-pink-600">Contact</a>
-    </nav>
+            <nav class="hidden md:flex gap-8 text-sm font-medium items-center">
+                <a href="index.html" class="text-pink-600">Home</a>
+                <a href="solutions.html" class="hover:text-pink-600">Solutions</a>
+                
+                <!-- Resources Dropdown -->
+                <div class="relative group">
+                    <button class="hover:text-pink-600 flex items-center gap-1">
+                        Resources
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a href="insights.html" class="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600 rounded-t-lg">Insights</a>
+                        <a href="case-studies.html" class="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600">Case Studies</a>
+                        <a href="newsroom.html" class="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600 rounded-b-lg">Newsroom</a>
+                    </div>
+                </div>
 
-    <button class="bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
-      Get started
-    </button>
-  </div>
-</header>
+                <!-- Tools Dropdown -->
+                <div class="relative group">
+                    <button class="hover:text-pink-600 flex items-center gap-1">
+                        Tools
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a href="media-kit-generator.html" class="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600 rounded-t-lg">Media Kit Generator</a>
+                        <a href="personalized-kit.html" class="block px-4 py-3 hover:bg-pink-50 hover:text-pink-600 rounded-b-lg">Show Personalized Kit</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="hover:text-pink-600">Contact</a>
+            </nav>
+
+            <button class="bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-pink-700 transition">
+                Get started
+            </button>
+        </div>
+    </header>
 
 <!-- HERO -->
-<section class="bg-gray-50">
-  <div class="max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-14 items-center">
-    <div>
-      <h1 class="text-5xl font-bold leading-tight mb-6">
-        Turn hungry moments<br />
-        into brand growth
-      </h1>
-      <p class="text-gray-600 text-lg mb-8 max-w-xl">
-        Panda Ads helps brands reach customers at the right moment across
-        foodpanda’s ecosystem using first-party data and powerful ad formats.
-      </p>
+<section class="relative h-[60vh]">
+  <img
+    src="https://pandaads.foodpanda.com/wp-content/uploads/2024/05/foodpanda-panda-ads.webp"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="About foodpanda"
+  />
+  <div class="absolute inset-0 bg-black/40"></div>
 
-      <div class="flex gap-4">
-        <button class="bg-pink-600 text-white px-8 py-4 rounded-full font-semibold">
-          Explore solutions
-        </button>
-        <button class="border px-8 py-4 rounded-full font-semibold">
-          Contact sales
-        </button>
-      </div>
-    </div>
-
-    <img
-      src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
-      class="rounded-2xl shadow-lg"
-      alt="Advertising dashboard"
-    />
+  <div class="relative max-w-7xl mx-auto px-6 h-full flex items-center">
+    <h1 class="text-white text-5xl md:text-6xl font-bold">
+      Reach Millions <br/> with Panda Ads
+    </h1>
   </div>
 </section>
 
 <!-- TRUSTED BY -->
-<section class="max-w-7xl mx-auto px-6 py-20">
-  <p class="text-center text-gray-500 mb-12">
-    Trusted by leading global and regional brands
+<section class="max-w-7xl mx-auto px-6 py-20 bg-gray-50">
+  <p class="text-center text-3xl font-bold mb-12">
+    Boost your brand with Asia’s largest 
+    <br>
+    food and grocery delivery network
   </p>
 
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-10 opacity-70">
-    <div class="h-10 bg-gray-200 rounded"></div>
-    <div class="h-10 bg-gray-200 rounded"></div>
-    <div class="h-10 bg-gray-200 rounded"></div>
-    <div class="h-10 bg-gray-200 rounded"></div>
-    <div class="h-10 bg-gray-200 rounded"></div>
-  </div>
-</section>
-
-<!-- SOLUTIONS OVERVIEW -->
-<section class="bg-white">
-  <div class="max-w-7xl mx-auto px-6 py-24">
-    <h2 class="text-3xl font-bold mb-16">
-      Advertising solutions built for impact
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-10">
-      <div class="border p-8 rounded-2xl">
-        <h3 class="font-semibold text-lg mb-3">Sponsored Listings</h3>
-        <p class="text-gray-600">
-          Increase visibility by appearing at the top when customers are ready to order.
-        </p>
-      </div>
-
-      <div class="border p-8 rounded-2xl">
-        <h3 class="font-semibold text-lg mb-3">In-app Banners</h3>
-        <p class="text-gray-600">
-          Capture attention with premium placements across the app.
-        </p>
-      </div>
-
-      <div class="border p-8 rounded-2xl">
-        <h3 class="font-semibold text-lg mb-3">Brand Campaigns</h3>
-        <p class="text-gray-600">
-          Run full-funnel campaigns aligned with your marketing goals.
-        </p>
-      </div>
+  <div class="flex flex-wrap justify-center gap-10 items-center">
+    <div class="h-10 rounded flex-1 flex flex-col justify-center items-center"></div>
+    <div class="h-10 rounded flex-1 flex flex-col justify-center items-center">
+      <h2 class="text-4xl font-bold">125M</h2>
+      <p class="font-semibold">app Dowloads</p>
     </div>
-  </div>
-</section>
-
-<!-- DATA -->
-<section class="bg-gray-50">
-  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-14 items-center">
-    <div>
-      <h2 class="text-3xl font-bold mb-6">
-        Powered by real customer insights
-      </h2>
-      <p class="text-gray-600 mb-6 max-w-lg">
-        Access first-party data to target high-intent customers and
-        measure performance across the funnel.
-      </p>
-      <span class="text-pink-600 font-semibold">Learn more →</span>
+    <div class="h-10 rounded flex-1 flex flex-col justify-center items-center">
+      <h2 class="text-4xl font-bold">11</h2>
+      <p class="font-semibold">Markets</p>
     </div>
-
-    <img
-      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-      class="rounded-2xl shadow-lg"
-      alt="Analytics"
-    />
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="bg-black text-white">
-  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
-    <h2 class="text-4xl font-bold mb-6">
-      Ready to advertise with Panda Ads?
-    </h2>
-    <button class="bg-pink-600 px-10 py-4 rounded-full font-semibold">
-      Get in touch
-    </button>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="border-t">
-  <div class="max-w-7xl mx-auto px-6 py-12 text-sm text-gray-500 flex justify-between">
-    <p>© 2025 foodpanda</p>
-    <div class="flex gap-6">
-      <span>Privacy</span>
-      <span>Terms</span>
+    <div class="h-10 rounded flex-1 flex flex-col justify-center items-center">
+      <h2 class="text-4xl font-bold">400+</h2>
+      <p class="font-semibold">cities</p>
     </div>
+    <div class="h-10 rounded flex-1 flex flex-col justify-center items-center"></div>
+
   </div>
-</footer>
+</section>
+<!--  -->
+    <!-- Section 2: Power up your visibility -->
+    <section class="py-16 px-4 ">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+                Power up your visibility & engagement
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class=" rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+                    <div class="text-5xl mb-4 flex justify-center"><img  width="100" height="100" src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_72_New-arrivals-300x300.png"/></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Maximize your reach</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Amplify your campaigns by connecting with your target customers right where they shop
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class=" rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+                  <div class="text-5xl mb-4 flex justify-center"><img  width="100" height="100" src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_73_Weekly-Highlights_04_-300x300.png"/></div>
+
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Engage high-value audiences</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Leverage our 1st party data and advanced targeting to connect with the right audience
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class=" rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+                  <div class="text-5xl mb-4 flex justify-center"><img  width="100" height="100" src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_73_Weekly-Highlights_04_-300x300.png"/></div>
+
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Get personalised support</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Achieve your marketing goals and drive growth with personalised support, insights, and more
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Customised retail media advertising -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+                Customised retail media advertising solutions for your brand's needs
+            </h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Phone Mockups -->
+                <div class="flex-1 flex justify-center">
+                    <img/src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_in-app-900x600.png" />
+                </div>
+                
+                <!-- Content -->
+                <div class="flex-1 max-w-md">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">In-app advertising</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Increase brand visibility with native display ads across different categories on the foodpanda app
+                    </p>
+                    <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-pink-700 transition shadow-md hover:">
+                        Explore Solutions
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 px-4 ">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Content -->
+                <div class="flex-1 max-w-md order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Off-app advertising</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Amplify your campaigns with foodpanda, from email marketing and social media to rider bag ads and product sampling
+                    </p>
+                    <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-pink-700 transition shadow-md hover:">
+                        Explore solutions
+                    </button>
+                </div>
+                
+                <!-- Image -->
+                <div class="flex-1 order-1 md:order-2">
+                    <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_panda-ads-website-homepage-off-app-solutions-highres-900x600.png" 
+                         alt="Off-app advertising solutions" 
+                         class="w-full h-auto rounded-lg ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Image -->
+                <div class="flex-1">
+                    <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_panda-ads-website-homepage-strategic-partnerships-highres-900x602.png" 
+                         alt="Strategic partnerships" 
+                         class="w-full h-auto rounded-lg ">
+                </div>
+                
+                <!-- Content -->
+                <div class="flex-1 max-w-md">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Strategic partnerships</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Launch integrated campaigns for maximum impact, with tailored solutions like vouchers, data partnerships and consumer insights
+                    </p>
+                    <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-pink-700 transition shadow-md hover:">
+                        Explore solutions
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="py-16 px-4 ">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Content -->
+                <div class="flex-1 max-w-md order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Go beyond basic targeting with panda ads</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Maximise your ROI and connect with a broader, more relevant audience through precise targeting powered by our 3rd-party data.
+                    </p>
+                    <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-pink-700 transition shadow-md hover:">
+                        Explore solutions
+                    </button>
+                </div>
+                
+                <!-- Image with comparison table -->
+                <div class="flex-1 order-1 md:order-2">
+                    <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_audience-targeting-900x600.png" 
+                         alt="Audience targeting comparison" 
+                         class="w-full h-auto rounded-lg ">
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="bg-gray-50 py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+                Proven impact with panda ads
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_coca-cola-1-900x507.jpeg" alt="Coca-Cola case study" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-3 text-gray-900">
+                            Coca-Cola leveraged retail media channels to boost sales and drive growth
+                        </h3>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:from-pink-600 hover:to-pink-700 transition">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_PandaAds_Eclipse_Thumbnail_v2-900x506.jpeg" alt="Mars Wrigley case study" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-3 text-gray-900">
+                            Mars Wrigley finds the perfect audience for its new product with panda ads
+                        </h3>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:from-pink-600 hover:to-pink-700 transition">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/jpeg-optimizer_amazon.jpeg" alt="Amazon Prime Video case study" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-3 text-gray-900">
+                            Amazon Prime Video and foodpanda's impressive entertainment strategy
+                        </h3>
+                        <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:from-pink-600 hover:to-pink-700 transition">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 px-4 ">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+                What our customers are saying
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6 italic">
+                        "We were looking for a large APAC-wide partner with extensive reach and scalability. Foodpanda offered us to tap into their geo-targeted audiences. Panda ads were able to go that another level we have delivered beyond our campaigns' target KPIs. We have been amazed seeing our business even closer."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-gray-900">Luka Adžlaga</p>
+                        <p class="text-sm text-gray-600">Managing Director</p>
+                        <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/egentics-Photoroom-768x192.png" alt="SGEntic" class="h-8 mt-3">
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6 italic">
+                        "As one of the goals from 2023 was to accelerate quick commerce, we found that the partnership with foodpanda and tapping into panda ads helped to grow our quick commerce business and deliver on our KPIs."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-gray-900">Jayson Lopez</p>
+                        <p class="text-sm text-gray-600">Senior Media and Digital Marketing Manager</p>
+                        <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/Universal-Robina-Logo-1024x576.png" alt="Universal Robina" class="h-8 mt-3">
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6 italic">
+                        "The collaboration with foodpanda through panda ads greatly enhanced our strategy. We connected with our customers on another level and improved our customers' interests and focusing. It reinforced user engagement."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-gray-900">Jessica Faye Tan</p>
+                        <p class="text-sm text-gray-600">Head of Commercial</p>
+                        <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/09/moneymax_owler_20201020_015917_original-768x196.png" alt="MoneyMax" class="h-8 mt-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 px-4 bg-pink-100">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <h2 class="text-3xl font-bold text-gray-900">
+                Start advertising with panda ads today!
+            </h2>
+            <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-pink-700 transition shadow-md hover:shadow-lg whitespace-nowrap">
+                Get in touch
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 9: Brands excelling with us -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+                Brands excelling with us
+            </h2>
+            
+            <!-- First Row of Logos -->
+            <div class="grid grid-cols-3 md:grid-cols-7 gap-8 mb-8 items-center justify-items-center">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/1.png" alt="Amazon" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/2.png" alt="Heineken" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/3.png" alt="Netflix" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/4.png" alt="Samsung" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/5.png" alt="Citi" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/6.png" alt="Huawei" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/8.png" alt="Universal" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+            </div>
+            
+            <!-- Second Row of Logos -->
+            <div class="grid grid-cols-3 md:grid-cols-7 gap-8 items-center justify-items-center">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/9.png" alt="Coca-Cola" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/10.png" alt="Mastercard" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/11.png" alt="Visa" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/13.png" alt="Mars" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/13.png" alt="GCash" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/15.png" alt="Zalora" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+                <img src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/16.png" alt="Disney+" class="h-16 grayscale hover:grayscale-0 transition opacity-60 hover:opacity-100">
+            </div>
+        </div>
+    </section>
+<footer class="bg-black text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- Logo -->
+            <div class="mb-12">
+                <a href="index.html" class="text-pink-600 text-2xl font-bold">
+        foodpanda
+      </a>
+            </div>
+
+            <!-- Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Our company -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Our company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-pink-500 transition">About foodpanda</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-pink-500 transition">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- panda ads -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">panda ads</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-pink-500 transition">Retail media solutions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-pink-500 transition">Media kit generator</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-pink-500 transition">Case studies</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-pink-500 transition">Industry insights</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-pink-500 transition">Newsroom</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-pink-500 transition">Pau-Pau marketer personality quiz</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get in touch -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Get in touch!</h3>
+                    <button class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-2 rounded-full font-semibold hover:from-pink-600 hover:to-pink-700 transition">
+                        Contact us
+                    </button>
+                </div>
+
+                <!-- Follow us on -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Follow us on</h3>
+                    <a href="#" class="text-gray-300 hover:text-pink-500 transition text-3xl">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 border-t border-gray-800">
+                <p class="text-gray-400 text-sm">Copyright © 2025 foodpanda</p>
+            </div>
+        </div>
+
+        <!-- Scroll to top button -->
+        <button class="fixed bottom-8 right-8 bg-pink-500 hover:bg-pink-600 text-white p-3 rounded-full shadow-lg transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+            </svg>
+        </button>
+    </footer>
 
 </body>
 </html>

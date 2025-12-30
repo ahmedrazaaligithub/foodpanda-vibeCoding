@@ -1,137 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Careers | foodpanda</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry to make an impact? | foodpanda Careers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-gray-900">
+<body class="bg-white">
+    <!-- Header -->
+    <header class="border-b bg-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- LOGO -->
+                <a href="../index.html" class="text-pink-600 text-2xl font-bold">
+                    foodpanda
+                </a>
 
-<!-- NAVBAR -->
-<div id="navbar"></div>
+                <!-- DESKTOP NAV -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+                    <div class="relative group">
+                        <button class="hover:text-pink-600 flex items-center gap-1">
+                            About us <span class="text-xs">▼</span>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 bg-white border shadow-lg rounded-lg py-2 w-48 hidden group-hover:block">
+                            <a href="culture-values.html" class="block px-4 py-2 hover:bg-gray-50">Culture & values</a>
+                            <a href="teams.html" class="block px-4 py-2 hover:bg-gray-50">Our teams</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="hover:text-pink-600 flex items-center gap-1">
+                            Why foodpanda? <span class="text-xs">▼</span>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 bg-white border shadow-lg rounded-lg py-2 w-48 hidden group-hover:block">
+                            <a href="pandapurpose.html" class="block px-4 py-2 hover:bg-gray-50">pandapurpose</a>
+                            <a href="diversity.html" class="block px-4 py-2 hover:bg-gray-50">Diversity, Equity & Inclusion</a>
+                            <a href="benefits.html" class="block px-4 py-2 hover:bg-gray-50">Benefits</a>
+                        </div>
+                    </div>
+                    <a href="jobs.html" class="hover:text-pink-600">Jobs</a>
+                    <a href="locations.html" class="hover:text-pink-600">Locations</a>
+                    <div class="relative group">
+                        <button class="hover:text-pink-600 flex items-center gap-1">
+                            pandaStories <span class="text-xs">▼</span>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 bg-white border shadow-lg rounded-lg py-2 w-48 hidden group-hover:block">
+                            <a href="blog.html" class="block px-4 py-2 hover:bg-gray-50">foodpanda Blog</a>
+                            <a href="../newsroom.html" class="block px-4 py-2 hover:bg-gray-50">foodpanda News</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-50">foodpanda Data Blog</a>
+                        </div>
+                    </div>
+                </nav>
 
-<!-- HERO -->
-<section class="bg-pink-600 text-white">
-  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
-    <div>
-      <h1 class="text-5xl font-bold mb-6">
-        Hungry to make a difference?
-      </h1>
-      <p class="text-lg mb-8">
-        Join foodpanda and help shape the future of food and quick commerce.
-      </p>
-      <button class="bg-white text-pink-600 font-semibold px-8 py-4 rounded-full">
-        View open roles
-      </button>
-    </div>
+                <!-- RIGHT ACTIONS -->
+                <div class="flex items-center gap-4">
+                    <button class="hidden md:block text-sm font-medium hover:text-pink-600">
+                        Shortlist (0)
+                    </button>
+                    <button id="menuBtn" class="lg:hidden text-xl">
+                        ☰
+                    </button>
+                </div>
+            </div>
+        </div>
 
-    <img
-      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-      alt="Careers hero"
-      class="rounded-2xl shadow-lg"
-    />
-  </div>
-</section>
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t">
+            <nav class="flex flex-col px-4 py-4 gap-4 text-sm font-medium">
+                <a href="culture-values.html">Culture & values</a>
+                <a href="teams.html">Our teams</a>
+                <a href="pandapurpose.html">pandapurpose</a>
+                <a href="diversity.html">Diversity, Equity & Inclusion</a>
+                <a href="benefits.html">Benefits</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="locations.html">Locations</a>
+                <a href="blog.html">foodpanda Blog</a>
+            </nav>
+        </div>
+    </header>
 
-<!-- LIFE AT FOODPANDA -->
-<section class="max-w-7xl mx-auto px-6 py-24">
-  <h2 class="text-3xl font-bold mb-16 text-center">
-    Life at foodpanda
-  </h2>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-pink-50 to-white py-20">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="max-w-3xl">
+                <h1 class="text-6xl font-bold text-gray-900 mb-6 leading-tight">Hungry to make an impact?</h1>
+                <p class="text-2xl text-gray-600 mb-8">There's always room at our table.</p>
+                
+                <!-- Search Bar -->
+                <div class="flex gap-2 mb-8">
+                    <input type="text" placeholder="Keyword" class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500">
+                    <button class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-lg font-medium transition-all">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="grid md:grid-cols-3 gap-10 text-center">
-    <div class="bg-gray-50 p-8 rounded-2xl">
-      <h4 class="font-semibold text-lg mb-3">Impact</h4>
-      <p class="text-gray-600">
-        Work on products that serve millions of customers every day.
-      </p>
-    </div>
+    <!-- Mission Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">"To be the most loved everyday food and groceries destination"</h2>
+                    <p class="text-gray-700 mb-4 leading-relaxed">...that's our mission at foodpanda. Whether it's by delivering food on our signature pink bikes, providing insights into the newest food trends, or showcasing local favorite restaurants, we're on a mission to redefine how food, people, culture and tech are connected.</p>
+                    <p class="text-gray-700 leading-relaxed">Our parent company, Delivery Hero, is a global leader in the food delivery industry processing over 3 million orders every day and operating in 40+ markets in the world, with 18,000 employees and approximately 500,000+ restaurant partners.</p>
+                </div>
+                <div>
+                    <img src="https://placeholder-mission-image.jpg" alt="foodpanda team" class="w-full rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="bg-gray-50 p-8 rounded-2xl">
-      <h4 class="font-semibold text-lg mb-3">Growth</h4>
-      <p class="text-gray-600">
-        Learn, grow, and develop your career globally.
-      </p>
-    </div>
+    <!-- What We Do Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">We love what we do</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="https://placeholder-team-image.jpg" alt="foodpanda office" class="w-full rounded-2xl shadow-lg">
+                </div>
+                <div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">foodpanda is the largest food and grocery delivery platform in Asia, outside of China. Operating in more than 400 cities across 11 markets, we continue to expand and grow in our core food delivery business, as well as in new verticals like grocery deliveries, with a strong tech infrastructure at our core.</p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">From our restaurants-partners, cloud kitchens and cloud grocery stores — foodpanda is just one tap away, getting everything you need into your hands quickly and conveniently!</p>
+                    <a href="pandapurpose.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition-all">
+                        Find Out More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="bg-gray-50 p-8 rounded-2xl">
-      <h4 class="font-semibold text-lg mb-3">Culture</h4>
-      <p class="text-gray-600">
-        Be part of a diverse, inclusive, and collaborative team.
-      </p>
-    </div>
-  </div>
-</section>
+    <!-- Diversity Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">You can be yourself at foodpanda</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">With over 50 nationalities and 20 languages spoken across our markets, we pride ourselves on our focus on diversity and inclusion. We are able to exchange and bring to the table the best practices (and food!) from each corner of the world.</p>
+                    <a href="diversity.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition-all">
+                        Find Out More
+                    </a>
+                </div>
+                <div>
+                    <img src="https://placeholder-diversity-image.jpg" alt="Diverse team" class="w-full rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- TEAMS -->
-<section class="bg-gray-100 py-24">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-16">
-      Explore our teams
-    </h2>
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-br from-pink-500 to-pink-600 text-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">A diverse and high-performing team</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-6xl font-bold mb-2">18k+</div>
+                    <div class="text-xl">Employees</div>
+                </div>
+                <div>
+                    <div class="text-6xl font-bold mb-2">400+</div>
+                    <div class="text-xl">Cities</div>
+                </div>
+                <div>
+                    <div class="text-6xl font-bold mb-2">50+</div>
+                    <div class="text-xl">Nationalities</div>
+                </div>
+                <div>
+                    <div class="text-6xl font-bold mb-2">20+</div>
+                    <div class="text-xl">Languages</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="grid md:grid-cols-4 gap-8">
-      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Engineering</div>
-      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Product</div>
-      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Marketing</div>
-      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Operations</div>
-      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Data</div>
-      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Design</div>
-      <div class="bg-white p-6 rounded-xl text-center shadow-sm">Finance</div>
-      <div class="bg-white p-6 rounded-xl text-center shadow-sm">People</div>
-    </div>
-  </div>
-</section>
+    <!-- Featured Jobs Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Some roles you might be interested in</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Job Card 1 -->
+                <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Associate, Account Management</h3>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><strong>Location:</strong> Yangon, Myanmar</p>
+                        <p><strong>Job Type:</strong> Permanent</p>
+                        <p><strong>Time Type:</strong> Full-time</p>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-sm">Build and maintain strong relationships with restaurant partners, ensuring mutual growth and success on the platform.</p>
+                    <a href="#" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium text-sm transition-all">
+                        Read more
+                    </a>
+                </div>
 
-<!-- VALUES -->
-<section class="max-w-7xl mx-auto px-6 py-24">
-  <div class="grid md:grid-cols-2 gap-12 items-center">
-    <img
-      src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-      class="rounded-2xl shadow-lg"
-      alt="Team culture"
-    />
+                <!-- Job Card 2 -->
+                <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Specialist, Logistics Performance</h3>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><strong>Location:</strong> Kuala Lumpur, Malaysia</p>
+                        <p><strong>Job Type:</strong> Permanent</p>
+                        <p><strong>Time Type:</strong> Full-time</p>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-sm">Play a vital role in optimizing delivery zones, improving logistics performance, and enhancing customer experience.</p>
+                    <a href="#" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium text-sm transition-all">
+                        Read more
+                    </a>
+                </div>
 
-    <div>
-      <h2 class="text-3xl font-bold mb-6">
-        A culture that cares
-      </h2>
-      <p class="text-gray-600 mb-4">
-        At foodpanda, we empower people to move fast, think big, and grow together.
-      </p>
-      <p class="text-gray-600">
-        We celebrate diversity, encourage ownership, and value collaboration.
-      </p>
-    </div>
-  </div>
-</section>
+                <!-- Job Card 3 -->
+                <div class="border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Specialist, Demand Control</h3>
+                    <div class="space-y-2 text-sm text-gray-600 mb-6">
+                        <p><strong>Location:</strong> Taguig, Philippines</p>
+                        <p><strong>Job Type:</strong> Permanent</p>
+                        <p><strong>Time Type:</strong> Full-time</p>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-sm">Contribute to regional logistics projects to enhance performance across APAC and EU markets.</p>
+                    <a href="#" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium text-sm transition-all">
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- CTA -->
-<section class="bg-pink-600 text-white">
-  <div class="max-w-7xl mx-auto px-6 py-20 text-center">
-    <h2 class="text-4xl font-bold mb-6">
-      Find the job you’d love
-    </h2>
-    <button class="bg-white text-pink-600 font-semibold px-10 py-4 rounded-full">
-      Explore opportunities
-    </button>
-  </div>
-</section>
+    <!-- Blog Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Read more about foodpanda</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Blog Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                    <img src="https://placeholder-blog-1.jpg" alt="pandapurpose" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-xs font-medium text-pink-600 bg-pink-50 px-3 py-1 rounded-full">Company Update</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">pandapurpose 2023: Delivering with purpose</h3>
+                        <p class="text-sm text-gray-600 mb-4">At foodpanda, we deliver more than just meals to millions of customers across 400 cities in 11 markets.</p>
+                        <a href="#" class="text-pink-600 hover:text-pink-700 font-medium text-sm">Read more →</a>
+                    </div>
+                </div>
 
-<!-- FOOTER -->
-<div id="footer"></div>
+                <!-- Blog Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                    <img src="https://placeholder-blog-2.jpg" alt="Mental health" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-xs font-medium text-pink-600 bg-pink-50 px-3 py-1 rounded-full">Culture</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Building a Better Workplace: Mental Health Initiatives</h3>
+                        <p class="text-sm text-gray-600 mb-4">We believe that a healthy mind is the foundation for a thriving life and career.</p>
+                        <a href="#" class="text-pink-600 hover:text-pink-700 font-medium text-sm">Read more →</a>
+                    </div>
+                </div>
 
-<!-- COMPONENT LOAD -->
-<script>
-  fetch("components/navbar.html")
-    .then(res => res.text())
-    .then(data => navbar.innerHTML = data);
+                <!-- Blog Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                    <img src="https://placeholder-blog-3.jpg" alt="Office space" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-xs font-medium text-pink-600 bg-pink-50 px-3 py-1 rounded-full">APAC</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Our Office Space</h3>
+                        <p class="text-sm text-gray-600 mb-4">Take a step into our APAC Headquarters! Ever wondered what it is like to be a panda?</p>
+                        <a href="#" class="text-pink-600 hover:text-pink-700 font-medium text-sm">Read more →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="blog.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-medium transition-all">
+                    View all
+                </a>
+            </div>
+        </div>
+    </section>
 
-  fetch("components/footer.html")
-    .then(res => res.text())
-    .then(data => footer.innerHTML = data);
-</script>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">About Us</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="locations.html" class="hover:text-pink-500">Locations</a></li>
+                        <li><a href="teams.html" class="hover:text-pink-500">Teams</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Join Us</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="jobs.html" class="hover:text-pink-500">Job Openings</a></li>
+                        <li><a href="culture-values.html" class="hover:text-pink-500">Our Values</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Privacy Policies</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-pink-500">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-pink-500">Cookies Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Connect with us</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-pink-500">📘</a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500">🐦</a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500">📷</a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-sm text-gray-400 text-center">© 2025 foodpanda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
 </body>
 </html>
